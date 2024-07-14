@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+	<title>Employee Management</title>
+	<meta content="" name="description">
+	<meta content="" name="keywords">
+
+	<!-- Favicons -->
+	<link href="assets/img/favicon.png" rel="icon">
+	<link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.gstatic.com" rel="preconnect">
+	<link
+		href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+		rel="stylesheet">
+
+	<!-- Vendor CSS Files -->
+	<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+	<link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+	<link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+	<link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+	<link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+	<link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+	<!-- Template Main CSS File -->
+	<link href="assets/css/style.css" rel="stylesheet">
+
+	<!-- =======================================================
+  * Template Name: NiceAdmin
+  * Updated: Jan 09 2024 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+	<!-- ======= Header ======= -->
+	<header id="header" class="header fixed-top d-flex align-items-center">
+
+		<div class="d-flex align-items-center justify-content-between">
+			<a href="index.html" class="logo d-flex align-items-center">
+				<img src="assets/img/logo.png" alt="">
+				<span class="d-none d-lg-block">NiceAdmin</span>
+			</a>
+			<i class="bi bi-list toggle-sidebar-btn"></i>
+		</div><!-- End Logo -->
+
+		<div class="search-bar">
+			<form class="search-form d-flex align-items-center" method="POST" action="#">
+				<input type="text" name="query" placeholder="Search" title="Enter search keyword">
+				<button type="submit" title="Search"><i class="bi bi-search"></i></button>
+			</form>
+		</div><!-- End Search Bar -->
+
+		<nav class="header-nav ms-auto">
+			<ul class="d-flex align-items-center">
+
+				<li class="nav-item d-block d-lg-none">
+					<a class="nav-link nav-icon search-bar-toggle " href="#">
+						<i class="bi bi-search"></i>
+					</a>
+				</li><!-- End Search Icon-->
+
+				<li class="nav-item dropdown">
+
+					<a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+						<i class="bi bi-bell"></i>
+						<span class="badge bg-primary badge-number">4</span>
+					</a><!-- End Notification Icon -->
+
+					<ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
+						<li class="dropdown-header">
+							You have 4 new notifications
+							<a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+						</li>
+						<li>
+							<hr class="dropdown-divider">
+						</li>
+
+						<li class="notification-item">
+							<i class="bi bi-exclamation-circle text-warning"></i>
+							<div>
+								<h4>Lorem Ipsum</h4>
+								<p>Quae dolorem earum veritatis oditseno</p>
+								<p>30 min. ago</p>
+							</div>
+						</li>
+
+						<li>
+							<hr class="dropdown-divider">
+						</li>
+
+						<li class="notification-item">
+							<i class="bi bi-x-circle text-danger"></i>
+							<div>
+								<h4>Atque rerum nesciunt</h4>
+								<p>Quae dolorem earum veritatis oditseno</p>
+								<p>1 hr. ago</p>
+							</div>
+						</li>
+
+						<li>
+							<hr class="dropdown-divider">
+						</li>
+
+						<li class="notification-item">
+							<i class="bi bi-check-circle text-success"></i>
+							<div>
+								<h4>Sit rerum fuga</h4>
+								<p>Quae dolorem earum veritatis oditseno</p>
+								<p>2 hrs. ago</p>
+							</div>
+						</li>
+
+						<li>
+							<hr class="dropdown-divider">
+						</li>
+
+						<li class="notification-item">
+							<i class="bi bi-info-circle text-primary"></i>
+							<div>
+								<h4>Dicta reprehenderit</h4>
+								<p>Quae dolorem earum veritatis oditseno</p>
+								<p>4 hrs. ago</p>
+							</div>
+						</li>
+
+						<li>
+							<hr class="dropdown-divider">
+						</li>
+						<li class="dropdown-footer">
+							<a href="#">Show all notifications</a>
+						</li>
+
+					</ul><!-- End Notification Dropdown Items -->
+
+				</li><!-- End Notification Nav -->
+
+				<li class="nav-item dropdown">
+
+					<a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+						<i class="bi bi-chat-left-text"></i>
+						<span class="badge bg-success badge-number">3</span>
+					</a><!-- End Messages Icon -->
+
+					<ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages">
+						<li class="dropdown-header">
+							You have 3 new messages
+							<a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+						</li>
+						<li>
+							<hr class="dropdown-divider">
+						</li>
+
+						<li class="message-item">
+							<a href="#">
+								<img src="assets/img/messages-1.jpg" alt="" class="rounded-circle">
+								<div>
+									<h4>Maria Hudson</h4>
+									<p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+									<p>4 hrs. ago</p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<hr class="dropdown-divider">
+						</li>
+
+						<li class="message-item">
+							<a href="#">
+								<img src="assets/img/messages-2.jpg" alt="" class="rounded-circle">
+								<div>
+									<h4>Anna Nelson</h4>
+									<p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+									<p>6 hrs. ago</p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<hr class="dropdown-divider">
+						</li>
+
+						<li class="message-item">
+							<a href="#">
+								<img src="assets/img/messages-3.jpg" alt="" class="rounded-circle">
+								<div>
+									<h4>David Muldon</h4>
+									<p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+									<p>8 hrs. ago</p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<hr class="dropdown-divider">
+						</li>
+
+						<li class="dropdown-footer">
+							<a href="#">Show all messages</a>
+						</li>
+
+					</ul><!-- End Messages Dropdown Items -->
+
+				</li><!-- End Messages Nav -->
+
+				<li class="nav-item dropdown pe-3">
+
+					<a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+						<img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
+						<span class="d-none d-md-block dropdown-toggle ps-2">K. Anderson</span>
+					</a><!-- End Profile Iamge Icon -->
+
+					<ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+						<li class="dropdown-header">
+							<h6>Kevin Anderson</h6>
+							<span>Web Designer</span>
+						</li>
+						<li>
+							<hr class="dropdown-divider">
+						</li>
+
+						<li>
+							<a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+								<i class="bi bi-person"></i>
+								<span>My Profile</span>
+							</a>
+						</li>
+						<li>
+							<hr class="dropdown-divider">
+						</li>
+
+						<li>
+							<a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+								<i class="bi bi-gear"></i>
+								<span>Account Settings</span>
+							</a>
+						</li>
+						<li>
+							<hr class="dropdown-divider">
+						</li>
+
+						<li>
+							<a class="dropdown-item d-flex align-items-center" href="pages-faq.html">
+								<i class="bi bi-question-circle"></i>
+								<span>Need Help?</span>
+							</a>
+						</li>
+						<li>
+							<hr class="dropdown-divider">
+						</li>
+
+						<li>
+							<a class="dropdown-item d-flex align-items-center" href="#">
+								<i class="bi bi-box-arrow-right"></i>
+								<span>Sign Out</span>
+							</a>
+						</li>
+
+					</ul><!-- End Profile Dropdown Items -->
+				</li><!-- End Profile Nav -->
+
+			</ul>
+		</nav><!-- End Icons Navigation -->
+
+	</header><!-- End Header -->
+
+	<!-- ======= Sidebar ======= -->
+	<aside id="sidebar" class="sidebar">
+
+		<ul class="sidebar-nav" id="sidebar-nav">
+
+			<li class="nav-item">
+				<a class="nav-link " th:href="@{/index}">
+					<i class="bi bi-grid"></i>
+					<span>Dashboard</span>
+				</a>
+			</li><!-- End Dashboard Nav -->
+
+			<li class="nav-item">
+				<a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
+					<i class="bi bi-minecart"></i><span>Vehicles</span><i class="bi bi-chevron-down ms-auto"></i>
+				</a>
+				<ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+					<li>
+						<a th:href="@{/vehicles}">
+							<i class="bi bi-circle"></i><span>Vehicle Data</span>
+						</a>
+					</li>
+					<li>
+						<a th:href="@{/vehiclemaintenances}">
+							<i class="bi bi-circle"></i><span>Maintenance</span>
+						</a>
+					</li>
+					<li>
+						<a th:href="@{/vehiclemovements}">
+							<i class="bi bi-circle"></i><span>Movement</span>
+						</a>
+					</li>
+					<li>
+						<a th:href="@{/vehiclehires}">
+							<i class="bi bi-circle"></i><span>Hires</span>
+						</a>
+					</li>
+				</ul>
+			</li><!-- End Vehicles Nav -->
+
+			<li class="nav-item">
+				<a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
+					<i class="bi bi-journal-text"></i><span>Parameters</span><i class="bi bi-chevron-down ms-auto"></i>
+				</a>
+				<ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+					<li>
+						<a th:href="@{/vehiclemakes}">
+							<i class="bi bi-circle"></i><span>Vehicle Make</span>
+						</a>
+					</li>
+					<li>
+						<a th:href="@{/vehicletypes}">
+							<i class="bi bi-circle"></i><span>Vehicle Types</span>
+						</a>
+					</li>
+					<li>
+						<a th:href="@{/vehiclemodels}">
+							<i class="bi bi-circle"></i><span>Vehicle Models</span>
+						</a>
+					</li>
+					<li>
+						<a th:href="@{/vehiclestatus}">
+							<i class="bi bi-circle"></i><span>Status Values</span>
+						</a>
+					</li>
+
+				</ul>
+			</li><!-- End Parameters Nav -->
+
+			<li class="nav-item">
+				<a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
+					<i class="bi bi-people"></i><span>People</span><i class="bi bi-chevron-down ms-auto"></i>
+				</a>
+				<ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+					<li>
+						<a th:href="@{/employees}">
+							<i class="bi bi-circle"></i><span>Employees</span>
+						</a>
+					</li>
+					<li>
+						<a th:href="@{/clients}">
+							<i class="bi bi-circle"></i><span>Clients</span>
+						</a>
+					</li>
+					<li>
+						<a th:href="@{/suppliers}">
+							<i class="bi bi-circle"></i><span>Suppliers</span>
+						</a>
+					</li>
+					<li>
+						<a th:href="@{/contacts}">
+							<i class="bi bi-circle"></i><span>Contacts</span>
+						</a>
+					</li>
+					<li>
+						<a th:href="@{/users}">
+							<i class="bi bi-circle"></i><span>Users</span>
+						</a>
+					</li>
+				</ul>
+			</li><!-- End people Nav -->
+
+			<li class="nav-item">
+				<a class="nav-link collapsed" data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#">
+					<i class="bi bi-tools"></i><span>HR Settings</span><i class="bi bi-chevron-down ms-auto"></i>
+				</a>
+				<ul id="charts-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+					<li>
+						<a th:href="@{/jobtitles}">
+							<i class="bi bi-circle"></i><span>Job Titles</span>
+						</a>
+					</li>
+					<li>
+						<a th:href="@{/employeetypes}">
+							<i class="bi bi-circle"></i><span>Employee Types</span>
+						</a>
+					</li>
+				</ul>
+			</li><!-- End HR Settings Nav -->
+
+			<li class="nav-item">
+				<a class="nav-link collapsed" data-bs-target="#icons-nav" data-bs-toggle="collapse" href="#">
+					<i class="bi bi-person-lines-fill"></i><span>Accounts</span><i
+						class="bi bi-chevron-down ms-auto"></i>
+				</a>
+				<ul id="icons-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+					<li>
+						<a th:href="@{/invoices}">
+							<i class="bi bi-circle"></i><span>Invoices</span>
+						</a>
+					</li>
+					<li>
+						<a th:href="@{/invoicestatus}">
+							<i class="bi bi-circle"></i><span>Invoice Status Values</span>
+						</a>
+					</li>
+				</ul>
+			</li><!-- End Accounts Nav -->
+
+			<li class="nav-item">
+				<a class="nav-link collapsed" data-bs-target="#global-nav" data-bs-toggle="collapse" href="#">
+					<i class="bi bi-globe"></i><span>Globals</span><i class="bi bi-chevron-down ms-auto"></i>
+				</a>
+				<ul id="global-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+					<li>
+						<a th:href="@{/countries}">
+							<i class="bi bi-circle"></i><span>Countries</span>
+						</a>
+					</li>
+					<li>
+						<a th:href="@{/states}">
+							<i class="bi bi-circle"></i><span>States</span>
+						</a>
+					</li>
+					<li>
+						<a th:href="@{/locations}">
+							<i class="bi bi-circle"></i><span>Locations</span>
+						</a>
+					</li>
+				</ul>
+			</li><!-- End globals Nav -->
+
+		</ul>
+
+	</aside><!-- End Sidebar-->
+
+	<main id="main" class="main">
+
+		<div class="pagetitle">
+			<h1>List of Employee</h1>
+			<nav>
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="@{/index}">Home</a></li>
+					<li class="breadcrumb-item active">Employee</li>
+				</ol>
+			</nav>
+		</div><!-- End Page Title -->
+
+		<section class="section">
+			<div class="row">
+				<div class="col-lg-12">
+
+					<div class="card">
+						<div class="card-body">
+
+
+							<button type="button" class="btn btn-primary" data-bs-toggle="modal"
+								data-bs-target="#addModal">
+								Add New
+							</button>
+
+
+							<!-- Table with stripped rows -->
+							<table class="table datatable">
+								<thead>
+									<tr>
+										<th></th>
+										<th>Full Name</th>
+										<th>Hire Date</th>
+										<th>Email</th>
+										<th>City</th>
+										<th>Phone</th>
+										<th>Action</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr th:each="employee:${employees}">
+										<td>
+											<a id="photoButton"
+												th:href="@{'assets/img/photos/' + ${employee.id} +'.png'}">
+												<img th:src="@{'assets/img/photos/' + ${employee.id} +'.png'}"
+													width="40" height="40">
+											</a>
+										</td>
+										<td th:text="${employee.lastname + ' ' + employee.firstname}">Full
+											Name</td>
+										<td th:text="${employee.hireDate.toString().substring(0,10)}">Hire Date</td>
+										<td th:text="${employee.email}">Email</td>
+										<td th:text="${employee.state.name}">City</td>
+										<td th:text="${employee.phone}">Phone</td>
+										<td>
+											<div class="">
+												<a th:href="@{/employees/findById(id=${employee.id})}"
+													class="btn btn-primary" id="detailsButton">
+													<i class="bi bi-card-text"></i>
+												</a>
+												<a th:href="@{/employees/findById(id=${employee.id})}"
+													class="btn btn-warning" id="editButton">
+													<i class="ri-edit-2-line"></i>
+												</a>
+												<a th:href="@{/employees/delete(id=${employee.id})}"
+													class="btn btn-danger" id="deleteButton"><i
+														class="ri-delete-bin-6-line"></i></a>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<!-- End Table with stripped rows -->
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+	</main><!-- End #main -->
+
+	<!-- Add Modal -->
+	<div class="modal fade modal-lg" id="addModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Add Vehicle</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<form th:action="@{/employees/addNew}" method="post">
+					<div class="modal-body">
+
+						<div class="container text-center">
+							<div class="row">
+								<div class="col">
+									<div class="form-floating">
+										<select class="form-select" id="titleAdd"
+											aria-label="Floating label select example" name="title">
+											<option>-SELECT-</option>
+											<option th:each="title : ${titles}" th:value="${title}" th:text="${title}">
+											</option>
+										</select>
+										<label for="floatingSelect">Title</label>
+									</div>
+									<br>
+									<div class="form-floating mb-3">
+										<input type="text" class="form-control" id="initialsAdd floatingInput"
+											name="initials">
+										<label for="floatingInput">Initials</label>
+									</div>
+									<div class="form-floating mb-3">
+										<input type="text" class="form-control"
+											id="socialSecurityNumberAdd floatingInput" name="socialSecurityNumber">
+										<label for="floatingInput">Social Security Number</label>
+									</div>
+									<div class="form-floating mb-3">
+										<input type="text" class="form-control" id="firstNameAdd floatingInput"
+											name="firstname">
+										<label for="floatingInput">First Name</label>
+									</div>
+									<div class="form-floating mb-3">
+										<input type="text" class="form-control" id="lastNameAdd floatingInput"
+											name="lastname">
+										<label for="floatingInput">Last Name</label>
+									</div>
+									<div class="form-floating mb-3">
+										<input type="text" class="form-control" id="otherNameAdd floatingInput"
+											name="othername">
+										<label for="floatingInput">Other Name</label>
+									</div>
+									<div class="form-floating">
+										<select class="form-select" id="genderAdd"
+											aria-label="Floating label select example" name="gender">
+											<option>-SELECT-</option>
+											<option th:each="gender : ${genders}" th:value="${gender}"
+												th:text="${gender}">
+											</option>
+										</select>
+										<label for="floatingSelect">Gender</label>
+									</div>
+									<br>
+									<div class="form-floating">
+										<select class="form-select" id="nationalityAdd"
+											aria-label="Floating label select example" name="countryid">
+											<option>-SELECT-</option>
+											<option th:each="country : ${countries}" th:value="${country.id}"
+												th:text="${country.description}">
+											</option>
+										</select>
+										<label for="floatingSelect">Nationality</label>
+									</div>
+									<br>
+									<div class="form-floating mb-3">
+										<textarea type="text" style="height: 100px;" class="form-control"
+											id="addressAdd floatingInput" name="address"></textarea>
+										<label for="floatingInput">Address</label>
+									</div>
+
+								</div>
+								<div class="col">
+									<div class="form-floating mb-3">
+										<input type="date" class="form-control" id="dateOfBirthAdd floatingInput"
+											name="dateOfBirth">
+										<label for="floatingInput">Date of Birth</label>
+									</div>
+									<div class="form-floating mb-3">
+										<input type="date" class="form-control" id="hireDateAdd floatingInput"
+											name="hireDate">
+										<label for="floatingInput">Hire Date</label>
+									</div>
+									<div class="form-floating">
+										<select class="form-select" id="stateAdd"
+											aria-label="Floating label select example" name="stateid">
+											<option>-SELECT-</option>
+											<option th:each="state : ${states}" th:value="${state.id}"
+												th:text="${state.name}">
+											</option>
+										</select>
+										<label for="floatingSelect">State/Province</label>
+									</div>
+									<br>
+									<div class="form-floating mb-3">
+										<input type="text" class="form-control" id="cityAdd floatingInput" name="city">
+										<label for="floatingInput">City</label>
+									</div>
+									<div class="form-floating mb-3">
+										<input type="tel" class="form-control" id="phoneAdd floatingInput" name="phone">
+										<label for="floatingInput">Phone</label>
+									</div>
+									<div class="form-floating mb-3">
+										<input type="tel" class="form-control" id="mobileAdd floatingInput"
+											name="mobile">
+										<label for="floatingInput">Mobile</label>
+									</div>
+									<div class="form-floating">
+										<select class="form-select" id="maritalStatusAdd"
+											aria-label="Floating label select example" name="maritalStatus">
+											<option>-SELECT-</option>
+											<option th:each="maritalStatus : ${maritalsStatus}"
+												th:value="${maritalStatus}" th:text="${maritalStatus}">
+											</option>
+										</select>
+										<label for="floatingSelect">Marital Status</label>
+									</div>
+									<br>
+									<div class="form-floating mb-3">
+										<input type="email" class="form-control" id="emailAdd floatingInput"
+											name="email">
+										<label for="floatingInput">Email</label>
+									</div>
+									<div class="form-floating">
+										<select class="form-select" id="jobTitleAdd"
+											aria-label="Floating label select example" name="jobtitleid">
+											<option>-SELECT-</option>
+											<option th:each="jobTitle : ${jobTitles}" th:value="${jobTitle.id}"
+												th:text="${jobTitle.description}">
+											</option>
+										</select>
+										<label for="floatingSelect">Job Title</label>
+									</div>
+									<br>
+									<div class="form-floating">
+										<select class="form-select" id="employeeTypeAdd"
+											aria-label="Floating label select example" name="employeetypeid">
+											<option>-SELECT-</option>
+											<option th:each="employeeType : ${employeeTypes}"
+												th:value="${employeeType.id}" th:text="${employeeType.description}">
+											</option>
+										</select>
+										<label for="floatingSelect">Employee Type</label>
+									</div>
+									<br>
+									<div class="form-floating mb-3">
+										<input type="file" class="form-control" id="imageAdd floatingInput">
+										<label for="floatingInput">Select Image</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+						<button type="submit" class="btn btn-primary">Save</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div><!-- End Add Modal-->
+
+	<!-- Edit Modal -->
+	<div class="modal fade modal-lg" id="editModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Update Vehicle</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<form th:action="@{/employees/update}" method="put">
+					<div class="modal-body">
+
+						<div class="container text-center">
+							<div class="row">
+								<div class="col">
+									<div class="form-floating mb-3">
+										<input type="text" class="form-control" id="idEdit" name="id" readonly>
+										<label for="floatingInput">Id</label>
+									</div>
+									<div class="form-floating">
+										<select class="form-select" id="titleEdit"
+											aria-label="Floating label select example" name="title">
+											<option>-SELECT-</option>
+											<option th:each="title : ${titles}" th:value="${title}" th:text="${title}">
+											</option>
+										</select>
+										<label for="floatingSelect">Title</label>
+									</div>
+									<br>
+									<div class="form-floating mb-3">
+										<input type="text" class="form-control" id="initialsEdit" name="initials">
+										<label for="floatingInput">Initials</label>
+									</div>
+									<div class="form-floating mb-3">
+										<input type="text" class="form-control" id="socialSecurityNumberEdit"
+											name="socialSecurityNumber">
+										<label for="floatingInput">Social Security Number</label>
+									</div>
+									<div class="form-floating mb-3">
+										<input type="text" class="form-control" id="firstNameEdit" name="firstname">
+										<label for="floatingInput">First Name</label>
+									</div>
+									<div class="form-floating mb-3">
+										<input type="text" class="form-control" id="lastNameEdit" name="lastname">
+										<label for="floatingInput">Last Name</label>
+									</div>
+									<div class="form-floating mb-3">
+										<input type="text" class="form-control" id="otherNameEdit" name="othername">
+										<label for="floatingInput">Other Name</label>
+									</div>
+									<div class="form-floating">
+										<select class="form-select" id="genderEdit"
+											aria-label="Floating label select example" name="gender">
+											<option>-SELECT-</option>
+											<option th:each="gender : ${genders}" th:value="${gender}"
+												th:text="${gender}">
+											</option>
+										</select>
+										<label for="floatingSelect">Gender</label>
+									</div>
+									<br>
+									<div class="form-floating">
+										<select class="form-select" id="nationalityEdit"
+											aria-label="Floating label select example" name="countryid">
+											<option>-SELECT-</option>
+											<option th:each="countrie : ${countries}" th:value="${countrie.id}"
+												th:text="${countrie.description}">
+											</option>
+										</select>
+										<label for="floatingSelect">Nationality</label>
+									</div>
+									<br>
+									<div class="form-floating mb-3">
+										<textarea type="text" style="height: 100px;" class="form-control"
+											id="addressEdit" name="address"></textarea>
+										<label for="floatingInput">Address</label>
+									</div>
+
+								</div>
+								<div class="col">
+									<div class="form-floating mb-3">
+										<input type="date" class="form-control" id="dateOfBirthEdit" name="dateOfBirth">
+										<label for="floatingInput">Date of Birth</label>
+									</div>
+									<div class="form-floating mb-3">
+										<input type="date" class="form-control" id="hireDateEdit" name="hireDate">
+										<label for="floatingInput">Hire Date</label>
+									</div>
+									<div class="form-floating">
+										<select class="form-select" id="stateEdit"
+											aria-label="Floating label select example" name="stateid">
+											<option>-SELECT-</option>
+											<option th:each="state : ${states}" th:value="${state.id}"
+												th:text="${state.name}">
+											</option>
+										</select>
+										<label for="floatingSelect">State/Province</label>
+									</div>
+									<br>
+									<div class="form-floating mb-3">
+										<input type="text" class="form-control" id="cityEdit" name="city">
+										<label for="floatingInput">City</label>
+									</div>
+									<div class="form-floating mb-3">
+										<input type="tel" class="form-control" id="phoneEdit" name="phone">
+										<label for="floatingInput">Phone</label>
+									</div>
+									<div class="form-floating mb-3">
+										<input type="tel" class="form-control" id="mobileEdit" name="mobile">
+										<label for="floatingInput">Mobile</label>
+									</div>
+									<div class="form-floating">
+										<select class="form-select" id="maritalStatusEdit"
+											aria-label="Floating label select example" name="maritalStatus">
+											<option>-SELECT-</option>
+											<option th:each="maritalStatus : ${maritalsStatus}"
+												th:value="${maritalStatus}" th:text="${maritalStatus}">
+											</option>
+										</select>
+										<label for="floatingSelect">Marital Status</label>
+									</div>
+									<br>
+									<div class="form-floating mb-3">
+										<input type="email" class="form-control" id="emailEdit" name="email">
+										<label for="floatingInput">Email</label>
+									</div>
+									<div class="form-floating">
+										<select class="form-select" id="jobTitleEdit"
+											aria-label="Floating label select example" name="jobtitleid">
+											<option>-SELECT-</option>
+											<option th:each="jobTitle : ${jobTitles}" th:value="${jobTitle.id}"
+												th:text="${jobTitle.description}">
+											</option>
+										</select>
+										<label for="floatingSelect">Job Title</label>
+									</div>
+									<br>
+									<div class="form-floating">
+										<select class="form-select" id="employeeTypeEdit"
+											aria-label="Floating label select example" name="employeetypeid">
+											<option>-SELECT-</option>
+											<option th:each="employeeType : ${employeeTypes}"
+												th:value="${employeeType.id}" th:text="${employeeType.description}">
+											</option>
+										</select>
+										<label for="floatingSelect">Employee Type</label>
+									</div>
+									<br>
+									<div class="form-floating mb-3">
+										<input type="file" class="form-control" id="imageEdit">
+										<label for="floatingInput">Select Image</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+						<button type="submit" class="btn btn-primary">Update</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div><!-- End Edit Modal-->
+
+	<div class="modal fade" id="deleteModal" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Confirm Delete</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					Are you sure you want to delete this vehicle?
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+					<a id="confirmDeleteButton" class="btn btn-danger">Delete </a>
+				</div>
+			</div>
+		</div>
+	</div><!-- End Delete Modal-->
+
+	<div class="modal fade modal-lg" id="detailsModal" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Details</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+
+					<div class="container text-center">
+						<div class="row">
+							<div class="col">
+								<div class="form-floating mb-3">
+									<input type="text" class="form-control-plaintext" id="idDetail" name="id" readonly>
+									<label for="floatingInput">Id</label>
+								</div>
+								<div class="form-floating mb-3">
+									<input type="text" class="form-control-plaintext" id="titleDetail" readonly>
+									<label for="floatingInput">Title</label>
+								</div>
+								<div class="form-floating mb-3">
+									<input type="text" class="form-control-plaintext" id="initialsDetail"
+										name="initials" readonly>
+									<label for="floatingInput">Initials</label>
+								</div>
+								<div class="form-floating mb-3">
+									<input type="text" class="form-control-plaintext" id="socialSecurityNumberDetail"
+										name="socialSecurityNumber" readonly>
+									<label for="floatingInput">Social Security Number</label>
+								</div>
+								<div class="form-floating mb-3">
+									<input type="text" class="form-control-plaintext" id="firstNameDetail"
+										name="firstname" readonly>
+									<label for="floatingInput">First Name</label>
+								</div>
+								<div class="form-floating mb-3">
+									<input type="text" class="form-control-plaintext" id="lastNameDetail"
+										name="lastname" readonly>
+									<label for="floatingInput">Last Name</label>
+								</div>
+								<div class="form-floating mb-3">
+									<input type="text" class="form-control-plaintext" id="otherNameDetail"
+										name="othername" readonly>
+									<label for="floatingInput">Other Name</label>
+								</div>
+								<div class="form-floating mb-3">
+									<input type="text" class="form-control-plaintext" id="genderDetail" readonly>
+									<label for="floatingInput">Gender</label>
+								</div>
+								<div class="form-floating mb-3">
+									<input type="text" class="form-control-plaintext" id="nationalityDetail" readonly>
+									<label for="floatingInput">Nationality</label>
+								</div>
+
+								<div class="form-floating mb-3">
+									<textarea type="text" style="height: 100px;" class="form-control-plaintext"
+										id="addressDetail" name="address" readonly></textarea>
+									<label for="floatingInput">Address</label>
+								</div>
+
+							</div>
+							<div class="col">
+								<div class="form-floating mb-3">
+									<input type="date" class="form-control-plaintext" id="dateOfBirthDetail"
+										name="dateOfBirth" readonly>
+									<label for="floatingInput">Date of Birth</label>
+								</div>
+								<div class="form-floating mb-3">
+									<input type="date" class="form-control-plaintext" id="hireDateDetail"
+										name="hireDate" readonly>
+									<label for="floatingInput">Hire Date</label>
+								</div>
+								<div class="form-floating mb-3">
+									<input type="text" class="form-control-plaintext" id="stateDetail" readonly>
+									<label for="floatingInput">State/Province</label>
+								</div>
+
+								<div class="form-floating mb-3">
+									<input type="text" class="form-control-plaintext" id="cityDetail" name="city"
+										readonly>
+									<label for="floatingInput">City</label>
+								</div>
+								<div class="form-floating mb-3">
+									<input type="tel" class="form-control-plaintext" id="phoneDetail" name="phone"
+										readonly>
+									<label for="floatingInput">Phone</label>
+								</div>
+								<div class="form-floating mb-3">
+									<input type="tel" class="form-control-plaintext" id="mobileDetail" name="mobile"
+										readonly>
+									<label for="floatingInput">Mobile</label>
+								</div>
+								<div class="form-floating mb-3">
+									<input type="text" class="form-control-plaintext" id="maritalStatusDetail" readonly>
+									<label for="floatingInput">Marital Status</label>
+								</div>
+
+								<div class="form-floating mb-3">
+									<input type="email" class="form-control-plaintext" id="emailDetail" name="email"
+										readonly>
+									<label for="floatingInput">Email</label>
+								</div>
+								<div class="form-floating mb-3">
+									<input type="email" class="form-control-plaintext" id="jobTitleDetail" readonly>
+									<label for="floatingInput">Job Title</label>
+								</div>
+								<div class="form-floating mb-3">
+									<input type="email" class="form-control-plaintext" id="employeeTypeDetail" readonly>
+									<label for="floatingInput">Employee Type</label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><!-- End Details Modal-->
+
+	<div class="modal fade" id="photoModal" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title"></h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<img src="" id="employeePhoto" width="90%" height="90%">
+				</div>
+			</div>
+		</div>
+	</div><!-- End photo Modal-->
+
+	<!-- ======= Footer ======= -->
+	<footer id="footer" class="footer">
+		<div class="copyright">
+			&copy; Copyright <strong><span>NiceAdmin</span></strong>. All Rights Reserved
+		</div>
+		<div class="credits">
+			<!-- All the links in the footer should remain intact. -->
+			<!-- You can delete the links only if you purchased the pro version. -->
+			<!-- Licensing information: https://bootstrapmade.com/license/ -->
+			<!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
+			Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+		</div>
+	</footer><!-- End Footer -->
+
+	<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+			class="bi bi-arrow-up-short"></i></a>
+
+	<!-- Vendor JS Files -->
+	<script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+	<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/vendor/chart.js/chart.umd.js"></script>
+	<script src="assets/vendor/echarts/echarts.min.js"></script>
+	<script src="assets/vendor/quill/quill.min.js"></script>
+	<script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+	<script src="assets/vendor/tinymce/tinymce.min.js"></script>
+	<script src="assets/vendor/php-email-form/validate.js"></script>
+
+	<script src="assets/vendor/jquery/jquery.min.js"></script>
+
+	<!-- Template Main JS File -->
+	<script src="assets/js/main.js"></script>
+	<script src="assets/js/employee.js"></script>
+
+</body>
+
+</html>
