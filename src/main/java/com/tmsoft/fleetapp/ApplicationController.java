@@ -15,14 +15,4 @@ public class ApplicationController {
 	public String goHome() {
 		return "index";
 	}
-	
-//	@GetMapping("/login")
-//	public String login() {
-//		return "pages-login";
-//	}
-//	
-//	@GetMapping("/logout")
-//	public String logout() {
-//		return "pages-login";
-//	}
 }
